@@ -17,8 +17,12 @@ body {
     font-family: "Nunito", sans-serif;
     text-align: center;
     background: rgba(235, 235, 235, 0.9);
+    color: rgba(34, 16, 58, 0.9);
+    background-image: url("../imgs/background.jpg");
+    background-repeat: repeat;
+    background-position: center top;  
 }
-
+  
 header {
     padding: 15px 5px 5px;
 }
@@ -106,6 +110,7 @@ header h1 {
 
 .card-name {
     margin: 20px auto 0;
+    color: rgb(185, 100, 255, 0.9);
 }
 
 .card-text {
@@ -166,6 +171,7 @@ header h1 {
 
 .modal-name {
     margin-bottom: 5px;
+    color: rgb(185, 100, 255, 0.9);
 }
 
 .modal-text {
@@ -190,9 +196,8 @@ header h1 {
     margin: 10px auto auto;
     background: rgba(255, 255, 255, 1);
     border-radius: 0.25em;
-    border: 1px solid rgba(100, 100, 100, 0.3);
+    border: 1px solid rgba(110, 14, 194, 0.7);
 }
-
 
 .modal-btn-container .btn {
     display: inline-block;
@@ -201,12 +206,17 @@ header h1 {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.9);
     padding: 0.75em 1.5em;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgb(185, 100, 255, 0.7);
     border-radius: 0.35em;
     transition: .4s ease-out;
     outline: none;
   }
-  
+
+  .modal-btn-container .btn:disabled{
+    background: rgba(83, 71, 82, 0.5);
+    color: rgba(99, 89, 89, 0.9);
+    border: 0px
+  }
 
 /* ===================================== 
    Media Queries
@@ -239,7 +249,6 @@ header h1 {
     }
 }
 
-
 /* ===================================== 
    Desktop
    Hover styles on desktop 
@@ -258,6 +267,6 @@ header h1 {
 
     .btn:hover {
         background: rgba(255, 255, 255, 1);
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 0.9);
     }
 }
